@@ -13,6 +13,19 @@ It takes 100ms on a 2015 Titan X to style the MIT Stata Center (1024×680) like 
 
 Our implementation is based off of a combination of Gatys' [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576), Johnson's [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](http://cs.stanford.edu/people/jcjohns/eccv16/), and Ulyanov's [Instance Normalization](https://arxiv.org/abs/1607.08022). 
 
+## Dependencies
+The easiest way to install all the packages needed to run this code is with Miniconda, a smaller version of Anaconda. Miniconda comes with Conda, a package and environment manager built specifically for data science. Install the Python 3 version of Miniconda appropriate for your operating system.
+
+For OS X and Linux, you'll need to install TensorFlow 0.11.0, Python 2.7.9, Pillow 3.4.2, scipy 0.18.1, and numpy 1.11.2.
+
+In your terminal, enter this commands line by line:
+```
+conda create -n style-transfer python=2.7.9
+source activate style-transfer
+conda install -c conda-forge tensorflow=0.11.0
+conda install scipy pillow
+```
+
 ## Video Stylization 
 Here we transformed every frame in a video, then combined the results. [Click to go to the full demo on YouTube!](https://www.youtube.com/watch?v=xVJwwWQlQ1o) The style here is Udnie, as above.
 <div align = 'center'>
